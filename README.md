@@ -15,6 +15,9 @@
 | データ | 出典 | 利用条件 |
 |---|---|---|
 | 概算医療費（都道府県別・診療種類別・月次） | **厚生労働省**「概算医療費データベース／制度別診療種類別都道府県別医療費」 | [政府標準利用規約 2.0](https://www.digital.go.jp/resources/open_data/) |
+| 受付件数・点数（速報） | **社会保険診療報酬支払基金**「受付件数・点数（速報）」 | 原本非配信・正規化数値のみ・出典明記・利用停止要請時に系列単位で除去 |
+| 被用者保険の確定月次 | **社会保険診療報酬支払基金**「統計月報」 | 同上 |
+| 国保・後期高齢者医療の確定月次 | **国民健康保険中央会**「医療費速報」 | 同上 |
 | 現在病床数 | **厚生労働省**「令和7年度病床機能報告」 | 同上 |
 | 必要病床数・医療需要推計 | **厚生労働省**「地域別の病床機能等の見える化（令和7年度）②構想区域の病床数等」「構想区域別の医療需要推計」 | 同上 |
 | 算定回数・患者数（年次） | **厚生労働省**「NDBオープンデータ（[第10回](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177221_00016.html)・[第11回](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177221_00017.html)）」 | 同上 |
@@ -36,6 +39,9 @@ data/dist/
 ├── volume_monthly/01.json 〜 47.json 医療需要・月次（都道府県別）
 ├── volume_monthly_national.json     医療需要・月次（全国）
 ├── volume_monthly_map_all_confirmed.json 地図表示用（C0d・全都道府県×直近12か月）
+├── volume_monthly_map_employee_insurance_confirmed.json 地図表示用（C0b）
+├── volume_monthly_map_employee_insurance_provisional_receipt.json 地図表示用（C0a）
+├── volume_monthly_map_nhi_and_latter_elderly_confirmed.json 地図表示用（C0c・全国限定のため空配列）
 ├── policy_timeline.json             政策動向
 ├── prefecture_status.json           47都道府県の構想策定ステータス
 └── geo/
